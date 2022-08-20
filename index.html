@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- google fonts stylesheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&display=swap" rel="stylesheet">
+    <title>NASA APOD API</title>
+</head>
+
+<body>
+    <main class="main">
+        <div class="form-container">
+            <h1>NASA APOD API</h1>
+            <div class="card">
+                <div class="card-header">
+                    <h2 id="h2">Enter a date</h2>
+                </div>
+                <div class="card-body">
+                    <!-- form -->
+                    <form action="" class="column" id="form">
+                        <div class="mb-3">
+                            <label for="date" class="form-label">Date</label>
+                            <input type="date" class="form-control" id="date">
+                        </div>
+                        <button id="form-btn" class="btn btn-primary" type="submit">Get Picture</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div id="apod-container">
+            <!-- 
+            <h3 id="title"></h3>
+            <p id="date"></p>
+            <section class="picture-explanation-container">
+                <img src="" id="picture" alt="astronomy image by NASA"/>
+                <p id="explanation"></p>
+                <button class="btn btn-primary" id="save" type="submit">Save to Favourites</button>
+            </section> -->
+        </div>
+        <!-- template for favourites -->
+        <div class="favs-container" id="favs-container">
+            <h3>Favourites</h3>
+            <div class="card-group" id="favs"></div>
+        </div>
+    </main>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

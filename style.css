@@ -1,0 +1,60 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+}
+
+html, body, main {
+    height: 90%;
+}
+
+
+.form-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.card{
+    width: 25rem;
+    margin: 2em auto 0 auto;
+    text-align: center;
+    color: black;
+}
+
+#apod-container{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#explanation{
+    text-align: left;
+    margin-top: 1em;
+    padding: 2em;
+}
+
+
+/* .hidden{
+    display: block;
+    background-color: black;
+    z-index: 1000;
+    color: white;
+    text-align: center;
+} */
+
+.favs-container{
+    background-color: black;
+    height: 100%;
+    color: white;
+}
+
+#picture{
+    max-width: 50%;
+}
+
+
